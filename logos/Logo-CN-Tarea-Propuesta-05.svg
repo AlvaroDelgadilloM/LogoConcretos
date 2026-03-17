@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="2160" viewBox="0 0 2160 2160">
+  <defs>
+    <radialGradient id="bg05" cx="50%" cy="0%" r="125%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </radialGradient>
+    <linearGradient id="metal05" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#969696"/>
+      <stop offset="50%" stop-color="#5a5a5a"/>
+      <stop offset="100%" stop-color="#2b2b2b"/>
+    </linearGradient>
+    <linearGradient id="orange05" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffab40"/>
+      <stop offset="100%" stop-color="#ef5b12"/>
+    </linearGradient>
+    <filter id="cement05" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="28" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .13 0"/>
+    </filter>
+    <filter id="shadow05" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="20" dy="30" stdDeviation="17" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="2160" height="2160" fill="url(#bg05)" filter="url(#cement05)"/>
+
+  <g font-family="Inter, Arial, sans-serif" filter="url(#shadow05)">
+    <text x="1140" y="920" font-size="168" font-weight="700" letter-spacing="9" fill="url(#metal05)">NARVAEZ</text>
+    <text x="350" y="1255" font-size="320" font-weight="900" letter-spacing="6" fill="url(#orange05)">CO</text>
+    <text x="1260" y="1255" font-size="320" font-weight="900" letter-spacing="6" fill="url(#orange05)">CRETOS</text>
+
+    <g transform="translate(960 770)">
+      <polygon points="150,10 280,200 205,200 205,540 95,540 95,200 20,200" fill="url(#metal05)"/>
+      <polygon points="150,245 290,450 210,450 210,820 90,820 90,450 10,450" fill="url(#orange05)"/>
+      <polygon points="150,500 280,690 205,690 205,1040 95,1040 95,690 20,690" fill="url(#metal05)"/>
+    </g>
+  </g>
+</svg>
